@@ -7,6 +7,7 @@
       视图驱动数据：
       用户名：<input type="text" v-model="username"> {{ username }}
     </p>
+    <button @click="onLogin">登录</button>
   </div>
 </template>
 
@@ -17,6 +18,11 @@ export default{
       //年龄
       age:10,
       username:"admin"
+    }
+  },
+  methods:{
+    onLogin(){
+      console.log(this.username);
     }
   }
 }
