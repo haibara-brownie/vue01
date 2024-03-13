@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './01-vue基本语法.vue'
 import router from './router'
 
 //关闭日志提醒

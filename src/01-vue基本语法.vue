@@ -14,13 +14,29 @@
     <button @click="isClick=!isClick" :class="{active:isClick}">
       点击切换样式
     </button>
+
+    <h1>引入组件</h1>
+
+    <BuyCar></BuyCar>
+
   </div>
 </template>
 
 <!--template节点有且只能有一个，是根节点-->
 
 <script>
+//导入组件
+import BuyCar from "./components/BuyCar";
+
+
 export default{
+
+  components:{
+    BuyCar
+    /**  BuyCar:BuyCar
+    可以简写为上面的BuyCar因为组件名和文件名一致*/
+  },
+
   data(){
     return{
       //年龄
