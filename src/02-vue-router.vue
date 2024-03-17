@@ -1,6 +1,6 @@
 <template>
     <div>
-        app
+        vue-router Study
         <hr>
         <router-link to="/about"> 关于</router-link>
         <router-link to="/"> 主页</router-link>

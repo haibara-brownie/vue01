@@ -50,4 +50,28 @@ import BuyCar from "./components/BuyCar";
 
 
 
+# elementplus 组件引入
+
+按照官方方法引入，官方提供多个方法时建议尝试多种，部分引入方法可能无效
+
+
+
+
+input 输入框需要使用data在script中接收输入的数据，否则会造成无法输入的情况
+
+```vue
+export default {
+        data(){
+            return {
+                input:""
+            }
+        },//使用data存数据
+
+````
+
+
+导入方式建议参考element，elementplus会使用ts语法，造成不兼容
+
+
+
 
